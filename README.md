@@ -8,6 +8,8 @@ This project demonstrates the use of **VBA scripting** to automate the analysis 
 
 Additionally, the script identifies the **stock with the greatest percentage increase**, **greatest percentage decrease**, and **greatest total volume** for each quarter.
 
+[![IMG-2784.jpg](https://i.postimg.cc/RFhBJmdS/IMG-2784.jpg)](https://postimg.cc/R3k82j2y)
+
 ## Technologies Used
 - **VBA (Visual Basic for Applications)**: For automating the analysis in Excel.
 - **Microsoft Excel**: For managing and manipulating the stock data.
@@ -38,7 +40,6 @@ The code will loop through the worksheets in the workbook and output the calcula
 - **README.md**: This file containing the project details.
 
 
-
 ## Calculations and Outputs
 - **Quarterly Change**: Difference between the opening and closing price for each quarter.
 - **Percentage Change**: Calculated as `(Closing Price - Opening Price) / Opening Price * 100`.
@@ -48,15 +49,7 @@ The code will loop through the worksheets in the workbook and output the calcula
   [![2-VBA-screenshot.jpg](https://i.postimg.cc/V6LVdNKv/2-VBA-screenshot.jpg)](https://postimg.cc/HJR2NTD1)
   
 
-## Results and Insights
-The script outputs the following:
-1. **Ticker symbol**, **quarterly change**, **percentage change**, and **total volume** for each stock in each quarter.
-2. **Greatest percentage increase**, **greatest percentage decrease**, and **greatest total volume** across the entire dataset.
-
-   [![2-VBA-returns.jpg](https://i.postimg.cc/L4q38fmw/2-VBA-returns.jpg)](https://postimg.cc/z3rgdybF)
-
 ## Future Improvements
 - The code can be enhanced to support larger datasets and more complex analyses.
 - Additional calculations, such as moving averages or price trends, can be added for deeper insights.
-
 
