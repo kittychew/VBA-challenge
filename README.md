@@ -43,10 +43,15 @@ The code will loop through the worksheets in the workbook and output the calcula
 - **Total Stock Volume**: Sum of the trading volume for each quarter.
 - **Greatest Increase/Decrease/Volume**: Identifies the stock with the highest change and volume.
 
+  [![2-VBA-screenshot.jpg](https://i.postimg.cc/V6LVdNKv/2-VBA-screenshot.jpg)](https://postimg.cc/HJR2NTD1)
+  
+
 ## Results and Insights
 The script outputs the following:
 1. **Ticker symbol**, **quarterly change**, **percentage change**, and **total volume** for each stock in each quarter.
 2. **Greatest percentage increase**, **greatest percentage decrease**, and **greatest total volume** across the entire dataset.
+
+   [![2-VBA-returns.jpg](https://i.postimg.cc/L4q38fmw/2-VBA-returns.jpg)](https://postimg.cc/z3rgdybF)
 
 ## Future Improvements
 - The code can be enhanced to support larger datasets and more complex analyses.
