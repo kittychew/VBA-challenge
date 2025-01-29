@@ -25,7 +25,7 @@ Additionally, the script identifies the **stock with the greatest percentage inc
 - **Multi-Sheet Analysis**: The script is capable of processing data across multiple worksheets, each representing a different quarter.
 
 ## How to Run the Code
-1. Download the **alphabetical_testing.xlsx** file and save it to your local system.
+1. Download the **Multiple_year_stock_data.xlsx** file and save it to your local system.
 2. Open **Excel** and press `Alt + F11` to open the VBA editor.
 3. Insert a new module by selecting `Insert → Module`, and paste the provided VBA script.
 4. Run the macro by pressing `Alt + F8` and selecting the macro name to process the data.
@@ -34,8 +34,10 @@ The code will loop through the worksheets in the workbook and output the calcula
 
 ## Files
 - **vba_stock_analysis_script.bas**: Contains the VBA code to process the stock data.
-- **alphabetical_testing.xlsx**: A sample dataset used to test the script.
+- **alphabetical_testing.xlsx**: A sample dataset used to test the script. The full dataset (`Multiple_year_stock_data.xlsx`) is not included in the repository due to its large size.
 - **README.md**: This file containing the project details.
+
+
 
 ## Calculations and Outputs
 - **Quarterly Change**: Difference between the opening and closing price for each quarter.
