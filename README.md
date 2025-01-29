@@ -1,46 +1,55 @@
-Stock Analysis VBA Script
+# VBA Stock Market Analysis Challenge
 
-Overview
+## Project Overview
+This project demonstrates the use of **VBA scripting** to automate the analysis of stock market data for multiple quarters. The script calculates key financial metrics, including:
+- **Quarterly Change**: The difference between the opening and closing price for each quarter.
+- **Percentage Change**: The percentage change from the opening to the closing price.
+- **Total Stock Volume**: The total number of stocks traded during the quarter.
 
-This VBA script analyzes stock data stored in an Excel workbook. It loops through each worksheet, calculates quarterly changes, percentage changes, and total volumes for each stock ticker, and outputs the results into a summary table. Additionally, it identifies stocks with the greatest percentage increase, decrease, and maximum trading volume.
+Additionally, the script identifies the **stock with the greatest percentage increase**, **greatest percentage decrease**, and **greatest total volume** for each quarter.
 
-Features
+## Technologies Used
+- **VBA (Visual Basic for Applications)**: For automating the analysis in Excel.
+- **Microsoft Excel**: For managing and manipulating the stock data.
 
-	•	Main Subroutine: Main()
-	•	Loops through each worksheet in the workbook, formats data using FormatAllSheets, and processes stocks using LoopThruStocks.
-	•	Formatting Sheets: FormatAllSheets(ws As Worksheet)
-	•	Formats specified columns as numbers with two decimal places across all worksheets.
-	•	Processing Stocks: LoopThruStocks(ws As Worksheet)
-	•	Calculates quarterly changes, percentage changes, and total volumes for each stock ticker.
-	•	Identifies and updates the summary table with the results.
-	•	Highlights positive changes in green and negative changes in red using conditional formatting.
-	•	Output: Summary table includes:
-	•	Ticker symbol
-	•	Quarterly change from opening to closing price
-	•	Percentage change from opening to closing price
-	•	Total stock volume
-	•	Additional Functionality:
-	•	Identifies stocks with the “Greatest % Increase”, “Greatest % Decrease”, and “Greatest Total Volume”.
-	•	Outputs results in accordance with provided example image.
+## Key Features
+- **Data Retrieval**: The script loops through each row of stock data, capturing the ticker symbol, open price, close price, and stock volume.
+- **Data Processing**: 
+  - Quarterly change in stock price is calculated.
+  - Percentage change is computed based on the opening and closing prices.
+  - Total stock volume is summed for each stock.
+- **Conditional Formatting**: 
+  - Positive changes are highlighted in green, while negative changes are highlighted in red.
+- **Key Insights**: 
+  - The script identifies the stock with the greatest percentage increase, greatest percentage decrease, and the greatest total volume.
+- **Multi-Sheet Analysis**: The script is capable of processing data across multiple worksheets, each representing a different quarter.
 
-Usage
+## How to Run the Code
+1. Download the **alphabetical_testing.xlsx** file and save it to your local system.
+2. Open **Excel** and press `Alt + F11` to open the VBA editor.
+3. Insert a new module by selecting `Insert → Module`, and paste the provided VBA script.
+4. Run the macro by pressing `Alt + F8` and selecting the macro name to process the data.
+   
+The code will loop through the worksheets in the workbook and output the calculated metrics in each sheet.
 
-	1.	Excel Environment:
-	•	Ensure Excel (Version 16.86) is installed with macros enabled.
-	2.	Running the Script:
-	•	Open your Excel workbook containing stock data.
-	•	Access the VBA editor (Alt + F11), insert a new module, and paste the script.
-	•	Run the Main subroutine to execute the analysis across all worksheets simultaneously.
-	3.	Conditional Formatting:
-	•	The script applies conditional formatting to highlight:
-	•	Positive changes in green.
-	•	Negative changes in red.
+## Files
+- **vba_stock_analysis_script.bas**: Contains the VBA code to process the stock data.
+- **alphabetical_testing.xlsx**: A sample dataset used to test the script.
+- **README.md**: This file containing the project details.
+
+## Calculations and Outputs
+- **Quarterly Change**: Difference between the opening and closing price for each quarter.
+- **Percentage Change**: Calculated as `(Closing Price - Opening Price) / Opening Price * 100`.
+- **Total Stock Volume**: Sum of the trading volume for each quarter.
+- **Greatest Increase/Decrease/Volume**: Identifies the stock with the highest change and volume.
+
+## Results and Insights
+The script outputs the following:
+1. **Ticker symbol**, **quarterly change**, **percentage change**, and **total volume** for each stock in each quarter.
+2. **Greatest percentage increase**, **greatest percentage decrease**, and **greatest total volume** across the entire dataset.
+
+## Future Improvements
+- The code can be enhanced to support larger datasets and more complex analyses.
+- Additional calculations, such as moving averages or price trends, can be added for deeper insights.
 
 
-Dependencies
-
-	•	Excel Version: Developed and tested on Microsoft Excel (Version 16.86).
-	•	Resources Used: YouTube tutorial (https://www.youtube.com/watch?v=3OfVIsKy59c&ab_channel=EverydayVBA), Microsoft Community post (https://answers.microsoft.com/en-us/msoffice/forum/all/how-do-i-convert-a-date-formatted-as-text-as/a89d4a1d-cb39-459d-84d6-d473d90f4182), and assistance from ChatGPT.
-
-License
-This project is licensed under the MIT License.
